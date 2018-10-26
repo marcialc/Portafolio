@@ -1,0 +1,39 @@
+.Header{
+  position: fixed;
+  width: 100%;
+  padding: 50px 0;
+  z-index: 100;
+}
+
+.HeaderGroup {
+  max-width: 370px;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  align-items: center;
+}
+
+.Header a {
+  color: rgba(138,43,226, 0.8);
+  font-weight: 700;
+}
+
+.Header a:hover{
+  color: white;
+  text-shadow: 2px 5px rgba(0,0,0,0.25);
+  transform: translateY(-3px);
+}
+
+@media (max-width: 300px) {
+  .Header{
+    padding: 15px, 0;
+  }
+
+  .HeaderGroup{
+    grid-template-columns: repeat(2, auto);
+  }
+
+  .Header a:nth-child(2){
+    display: none;
+  }
+}

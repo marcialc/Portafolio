@@ -1,12 +1,19 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import '../layouts/index.css'
+
 
 const IndexPage = () => (
   <div>
-    <h1>Software Engineer / Front-end Designer</h1>
-    <p> Florida International Student </p>
-    <p> B.S in Computer Science </p>
-    <Link to="/page-2/">Go to page 2</Link>
+    <div className="Hero">
+      <div className="HeroGroup">
+        <h1>CABRERA + CODE</h1>
+        <p>Software Engineer</p>
+        <p>Front-end Developer</p>
+        <p>Full-Stack Developer</p>
+        <p>UI/UX</p>
+      </div>
+    </div>
   </div>
 )
 
